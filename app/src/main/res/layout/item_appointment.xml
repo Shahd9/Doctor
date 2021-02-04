@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_border_background"
+    android:elevation="@dimen/elevation"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginStart="@dimen/padding"
+    android:layout_marginEnd="@dimen/padding"
+    android:layout_marginTop="@dimen/padding"
+    android:paddingTop="@dimen/padding"
+    android:paddingBottom="@dimen/padding">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.18" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.62" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_patient_doctor_picture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_user_placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_appointment_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/iv_next"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvi_date"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvi_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/colorSecondary"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tv_appointment_title"
+        app:layout_constraintBottom_toTopOf="@id/tvi_last_updated"
+        android:drawablePadding="4dp"
+        android:text="@string/date"
+        app:drawableStartCompat="@drawable/ic_time_icon"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/textGrey"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toStartOf="@id/iv_next"
+        app:layout_constraintStart_toEndOf="@+id/tvi_date"
+        app:layout_constraintTop_toTopOf="@id/tvi_date"
+        app:layout_constraintBottom_toBottomOf="@id/tvi_date"
+        android:text="@string/not_available" />
+
+    <TextView
+        android:id="@+id/tvi_last_updated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/colorSecondary"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tvi_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="4dp"
+        android:text="@string/last_updated"
+        app:drawableStartCompat="@drawable/ic_time_icon"/>
+
+    <TextView
+        android:id="@+id/tv_last_updated"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/textGrey"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toStartOf="@id/iv_next"
+        app:layout_constraintStart_toEndOf="@+id/tvi_last_updated"
+        app:layout_constraintTop_toTopOf="@id/tvi_last_updated"
+        app:layout_constraintBottom_toBottomOf="@id/tvi_last_updated"
+        android:text="@string/not_available" />
+
+
+    <ImageView
+        android:id="@+id/iv_next"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/half_padding"
+        android:src="@drawable/ic_next"
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline4"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

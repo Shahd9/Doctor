@@ -1,0 +1,92 @@
+{
+  "project_info": {
+    "project_number": "148487677016",
+    "project_id": "msa-project-2021",
+    "storage_bucket": "msa-project-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148487677016:android:dfd4d79b5e1101c776962d",
+        "android_client_info": {
+          "package_name": "com.msaproject.doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148487677016-h52trlu2jfqhrudldqjffdgh176ca9id.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.msaproject.doctor",
+            "certificate_hash": "16efc7903f5b6265ff4d25008f70f225832c72ad"
+          }
+        },
+        {
+          "client_id": "148487677016-ck92mv8d2rihnq1g5ro88lg2nmisi5ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8KdewQea6wJ9ixSdKNtC2w381dvQE8P0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148487677016-ck92mv8d2rihnq1g5ro88lg2nmisi5ln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148487677016:android:b31625e68a290d1076962d",
+        "android_client_info": {
+          "package_name": "com.msaproject.patient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148487677016-841abhgqa8nmgv0urrbeccata2mbrsjo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.msaproject.patient",
+            "certificate_hash": "a8de6470bd17acb7b7fd1d5f5e26f9d9b2e8eeec"
+          }
+        },
+        {
+          "client_id": "148487677016-a5o7vnrbcqj0rdehb8frkci3aeublif6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.msaproject.patient",
+            "certificate_hash": "16efc7903f5b6265ff4d25008f70f225832c72ad"
+          }
+        },
+        {
+          "client_id": "148487677016-ck92mv8d2rihnq1g5ro88lg2nmisi5ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8KdewQea6wJ9ixSdKNtC2w381dvQE8P0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148487677016-ck92mv8d2rihnq1g5ro88lg2nmisi5ln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

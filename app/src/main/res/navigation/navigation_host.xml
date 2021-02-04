@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_host_graph"
+    app:startDestination="@id/nav_my_patients">
+
+    <action
+        android:id="@+id/nav_destination"
+        app:destination="@id/nav_my_patients"/>
+
+    <fragment
+        android:id="@+id/nav_my_patients"
+        android:label="@string/my_patients"
+        android:name="com.msaproject.doctor.ui.my_patients.MyPatientsFragment"
+        tools:layout="@layout/fragment_my_patients"/>
+
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:label="@string/notifications"
+        android:name="com.msaproject.doctor.ui.notifications.NotificationsFragment"
+        tools:layout="@layout/fragment_notifications"/>
+
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:label="@string/profile"
+        android:name="com.msaproject.doctor.ui.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile"/>
+
+</navigation>

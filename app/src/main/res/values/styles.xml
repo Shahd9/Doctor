@@ -1,0 +1,94 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorBackground">@color/colorWhite</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/appfonts</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:colorBackground">@color/colorWhite</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/appfonts</item>
+    </style>
+
+    <style name="AppTheme.NoStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:colorBackground">@color/colorWhite</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/appfonts</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Search" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/et_search_background</item>
+        <item name="android:textColorHint">@color/colorWhiteHint</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#BFCED6</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">21sp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="BlueButton" parent="Button">
+        <item name="android:background">@drawable/button_blue</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ConfirmButton" parent="Button">
+        <item name="android:background">@drawable/confirm_button_background</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CancelButton" parent="Button">
+        <item name="android:background">@drawable/cancel_button_background</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="RegisterButton" parent="Button">
+        <item name="android:background">@drawable/button_secondary_effect</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

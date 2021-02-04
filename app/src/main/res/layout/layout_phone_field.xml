@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/editTextBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@drawable/ic_mobile_icon" />
+
+    <TextView
+        android:id="@+id/tv_country_code"
+        android:layout_marginStart="@dimen/half_padding"
+        android:textDirection="ltr"
+        android:background="@color/colorTransparent"
+        android:drawableEnd="@drawable/ic_select_code_icon"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:hint="@string/input_mobile_number"
+        android:layout_marginStart="@dimen/half_padding"
+        android:id="@+id/et_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textAlignment="viewStart"
+        android:inputType="phone" />
+</LinearLayout>

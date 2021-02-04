@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00A3AD</color>
+    <color name="colorPrimaryDark">#00A3AD</color>
+    <color name="colorAccent">#59d5df</color>
+
+    <color name="colorSecondary">#F6BE00</color>
+    <color name="colorBlack">#000</color>
+
+    <color name="onboarding_tansparent1">#CC17AAB3</color>
+    <color name="onboarding_tansparent2">#CCA3BCC9</color>
+    <color name="onboarding_tansparent3">#CC55A383</color>
+    <color name="onboarding_tansparent4">#CC4A7A99</color>
+
+    <color name="textGrey">#787F83</color>
+    <color name="textBlue">#002A3A</color>
+    <color name="darkGrey">#5E5F67</color>
+    <color name="textChat">#5E5F67</color>
+
+    <color name="colorRed">#DB4141</color>
+    <color name="chatInput1">#f6f7f8</color>
+    <color name="chatInput2">#BFCED6</color>
+
+    <color name="colorItemBorder">#787F83</color>
+    <color name="colorSeparator">#BFCED6</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorOffWhite">#F2F2F2</color>
+    <color name="colorWhiteHint">#50FFFFFF</color>
+    <color name="colorSearchTextView">#70002A3A</color>
+    <color name="colorChatButton">#36749D</color>
+    <color name="colorTransparent">#00008577</color>
+    <color name="colorDim">#99FFFFFF</color>
+    <color name="colorPrimaryTransparent">#8000A3AD</color>
+    <color name="colorGrey">#BFCED6</color>
+    <color name="colorCancelOrderButton">#787F83</color>
+    <color name="colorTransactionGreen">#50A684</color>
+    <color name="colorTransactionRed">#DB4141</color>
+</resources>
